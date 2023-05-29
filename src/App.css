@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+body{
+    margin:0;
+    background-image: url("/Users/neilsagarsahu/Desktop/Weather-App/weather-app/files/weather-background-img.jpg");
+    background-size: cover;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #dddddd57;
+    backdrop-filter: blur(8px);  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar h1{
+    margin:15px;
+    padding:5px;
+    color: #813636;
+}
+.searchSec{
+    text-align: center;
+    width:50%;
+    padding:20px;
+}
+.searchSec input{
+    width:60%;
+    display: inline-block;
+    margin-left:auto;
+    margin-right:auto;
+    padding:10px;
+    padding-left:20px;
+    font-size:20px;
+    border-top-left-radius:7px;
+    border-bottom-left-radius:7px;
+    border:0;
+    border-right:0;
+    background-color: #dde6edda;
+}
+.searchSec input:focus{
+    outline-width: 0;
   }
+.searchSec button{
+    
+    padding:9.5px;
+    border:0;
+    border-top-right-radius:7px;
+    border-bottom-right-radius:7px;
+    background-color: #E76161;
+    padding-left:15px;
+    padding-right:15px;
+    position:relative;
+    top:1.5px;
+
+}
+.searchSec button:hover{
+    background-color: #813636;
+    cursor: pointer;
+    color:white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.content{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:100px;
+    padding:30px;
 }
-
-.App-link {
-  color: #61dafb;
+.content .cityname-display{
+    width:600px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:40px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-between;
+    border-radius:10px;
+    padding:10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content .cityname-display p,h3{
+    margin:0;
+}
+.content .cityname-display h3{
+    font-size: 35px;
+    padding:6px;
+}
+.content .cityname-display h3 span{
+    position: relative;
+    top:5px;
+}
+.content .cityname-display .tag{
+    font-size: 10px;
+}
+.content .cityname-display .value{
+    font-size: 32px;
+}
+.content .cityname-display .weather-info{
+    padding:10px;
+}
+.content .display-info{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+}
+.card-type-1{
+    background-color: #ccccccce;
+    width:180px;
+    height:100px;
+    border-radius: 20px;
+    padding:15px;
+    /* float: left; */
+    margin:15px;
+}
+.card-type-1 .card-heading,.card-type-2 .card-heading{
+    font-size: 12px;  
+}
+.card-type-1 .card-content{
+    font-size:64px;
+    text-align: center;
+    /* position: relative; */
+    /* left:25%; */
+    width:80%;
+}
+.card-type-1 .card-content span{
+    font-size:18px;
+    position: relative;
+    bottom:32px;
+    /* left:50px; */
+}
+.card-type-2{
+    background-color: #ccccccce;
+    width:180px;
+    height:100px;
+    border-radius: 20px;
+    padding:15px;
+    float: left;
+    margin:15px;
+}
+.card-type-2 .card-content{
+    font-size:38px;
+    padding-left:10px;
+    margin-top:10px;
+    width:80%;
 }
