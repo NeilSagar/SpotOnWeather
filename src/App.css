@@ -1,6 +1,6 @@
 body{
     margin:0;
-    background-image: url("/Users/neilsagarsahu/Desktop/Weather-App/weather-app/files/weather-background-img.jpg");
+    background-image: url("../files/weather-background-img.jpg");
     background-size: cover;
 }
 .navbar{
@@ -109,6 +109,7 @@ body{
 }
 .card-type-1 .card-heading,.card-type-2 .card-heading{
     font-size: 12px;  
+    color:#803535;
 }
 .card-type-1 .card-content{
     font-size:64px;

@@ -83,7 +83,9 @@ function Content(props){
         <CircularProgress color="inherit" />
       </Backdrop>
         :
-            <>
+            null
+        }
+        <>
                 <City cityname={cityname} weather={weather}/>
                 <div className="display-info">
                 <CardType1 heading="Temperature" value={temperature} unit="°C"/>
@@ -94,8 +96,6 @@ function Content(props){
                 <CardType1 heading="Windspeed" value={windspeed} unit="kph"/>
                 </div>
             </>
-        }
-
         </div>
     );
 }
