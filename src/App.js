@@ -12,7 +12,6 @@ function App() {
   return (
     <div className="App">
       <Nav handleCityName={handleCityName} />
-
       <Content 
       city={city}/>
       <Footer/>
