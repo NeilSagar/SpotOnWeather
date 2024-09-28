@@ -12,7 +12,7 @@ function Nav(props){
     }
     return (
         <div className="navbar">
-            <h1>Weather App</h1>
+            <h1>SpotOnWeather</h1>
             <div className="searchSec">
             <input className="city-name" placeholder="which city are you in?" value={cityname} onChange={handleChange}/>
             <button onClick={handleSubmit}><SearchIcon sx={{ fontSize: 20 }}/></button>
